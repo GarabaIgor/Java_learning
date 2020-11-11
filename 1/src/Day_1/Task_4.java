@@ -1,7 +1,11 @@
-public class Task_5 {
+package Day_1;
+
+public class Task_4 {
     public static void main(String[] args) {
-        for (int year = 1980; year <= 2020; year += 4) {
+        int year = 1980;
+        while (year <= 2020) {
             System.out.printf("Олимпиада %d года\n", year);
+            year += 4;
         }
     }
 }
