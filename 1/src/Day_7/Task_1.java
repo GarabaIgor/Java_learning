@@ -1,20 +1,28 @@
-package Day_6;
+package Day_7;
 
 import java.time.Year;
 
-public class Task_2 {
+public class Task_1 {
     public static void main(String[] args) {
-        Airplane plane = new Airplane("Сухой", Year.parse("2010"), 50, 5000);
-        plane.fillUp(1000);
-        plane.fillUp(500);
-        plane.setYear(Year.parse("2012"));
-        plane.setLength(75);
-        plane.info();
+        Airplane plane1 = new Airplane("Boeng", Year.parse("2000"), 106, 1000);
+        Airplane plane2 = new Airplane("Сухой", Year.parse("2007"), 106, 10000);
+        Airplane.compareAirplanes(plane1, plane2);
     }
-
 }
 
 class Airplane {
+    public static void compareAirplanes(Airplane first, Airplane second) {
+        if (first.length > second.length) {
+            System.out.println("Первый самолёт длиннее");
+        }
+        else if (first.length < second.length) {
+            System.out.println("Второй самолёт длиннее");
+        }
+        else {
+            System.out.println("Самолёты одинаковой длины");
+        }
+    }
+
     public String getProducer() {
         return producer;
     }
