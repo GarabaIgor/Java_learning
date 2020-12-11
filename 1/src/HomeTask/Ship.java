@@ -53,17 +53,6 @@ public class Ship {
         this.addHaloToShip();
     }
 
-//    public Ship(String inpParams) {
-//        String[] inpArr = inpParams.split(";");
-//        String coords = inpArr[0];
-//        int size = Integer.parseInt(inpArr[1]);
-//        boolean isHorizontal = Boolean.parseBoolean(inpArr[2]);
-//        String[] coordsArr = coords.split(",");
-//        Coordinate startCoords = new Coordinate(Integer.parseInt(coordsArr[0]), Integer.parseInt(coordsArr[1]));
-//
-//        this(size, startCoords, isHorizontal);
-//    }
-
     /**
      * Наполнение массива базовых блоков согласно характеристикам корабля (начальные координаты, размер, тип расположения)
      */
